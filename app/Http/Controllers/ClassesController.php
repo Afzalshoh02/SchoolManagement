@@ -25,7 +25,7 @@ class ClassesController extends Controller
         $save = new ClassesModel();
         $save->name = $request->name;
         $save->status = $request->status;
-        $save->created_by = Auth::user()->id;
+        $save->crated_by = Auth::user()->id;
         $save->save();
         return redirect('admin/classes/list')->with('success', "Classes Successfully Crated");
     }
