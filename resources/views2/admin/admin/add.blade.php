@@ -62,6 +62,3 @@
     <!-- /.content-wrapper -->
 
 @endsection
-
-
-
